@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área do Membro - AD Caculé</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <style>
+        
+    </style>
+</head>
+<body>
+   <!-- Barra de Navegação -->
+   <nav class="menu-principal navbar navbar-expand-lg navbar-dark ">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img src="img/logo.png" alt="Logo AD Caculé" height="50">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sobre.html">Sobre Nós</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ministerios.html">Ministérios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="eventos.html">Eventos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contato.html">Contato</a>
+                </li>
+            </ul>
+            <div class="d-flex">
+                <a href="login.html" class="btn btn-outline-light">
+                    <i class="fas fa-user"></i> Área do Membro
+                </a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+    <!-- Formulário de Login -->
+    <div class="container">
+        <div class="login-container bg-white">
+            <h2 class="text-center mb-4">Área do Membro</h2>
+            <form id="loginForm">
+                <div class="mb-3">
+                    <label for="email" class="form-label">E-mail</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Senha</label>
+                    <input type="password" class="form-control" id="password" required>
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="remember">
+                    <label class="form-check-label" for="remember">Lembrar-me</label>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Entrar</button>
+                <div class="text-center mt-3">
+                    <a href="#">Esqueci minha senha</a>
+                </div>
+            </form>
+            <div class="alert alert-danger mt-3 d-none" id="loginError">
+                E-mail ou senha incorretos. Por favor, tente novamente.
+            </div>
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container text-center">
+            <p class="mb-0">&copy; 2023 Assembleia de Deus - Caculé/BA. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS e Popper.js -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- JavaScript de Autenticação -->
+    <script src="js/auth.js"></script>
+</body>
+</html>

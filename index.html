@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assembleia de Deus - Caculé/BA</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <!-- CSS Personalizado -->
+    <link href="css/style.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Barra de Navegação -->
+    <nav class="menu-principal navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo-white.png" alt="Logo AD Caculé" height="50">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobre.html">Nossa História</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ministerios.html">Ministérios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="eventos.html">Eventos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contato.html">Contato</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <a href="login.html" class="btn btn-outline-light">
+                        <i class="fas fa-user"></i> Área do Membro
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carrossel de Imagens -->
+    <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/culto1.jpg" class="d-block w-100" alt="Culto">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Venha nos visitar</h5>
+                    <p>Domingos às 19h | Quartas às 19:30</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="img/culto1.jpg" class="d-block w-100" alt="Evento">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Eventos Especiais</h5>
+                    <p>Confira nossa programação</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <!-- Seção de Destaques -->
+    <section class="container my-5">
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <i class="fas fa-bible fa-3x mb-3 text-primary"></i>
+                        <h4 class="card-title">Estudos Bíblicos</h4>
+                        <p class="card-text">Participe dos nossos estudos bíblicos e aprofunde seu conhecimento na
+                            Palavra de Deus.</p>
+                        <a href="#" class="btn btn-primary">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <i class="fas fa-hands-praying fa-3x mb-3 text-primary"></i>
+                        <h4 class="card-title">Cultos de Oração</h4>
+                        <p class="card-text">Terças-feiras às 19h - Venha fortalecer sua vida espiritual através da
+                            oração.</p>
+                        <a href="#" class="btn btn-primary">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card h-100">
+                    <div class="card-body text-center">
+                        <i class="fas fa-users fa-3x mb-3 text-primary"></i>
+                        <h4 class="card-title">Ministérios</h4>
+                        <p class="card-text">Descubra como você pode servir e se envolver em nossos diversos
+                            ministérios.</p>
+                        <a href="ministerios.html" class="btn btn-primary">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Próximos Eventos -->
+    <section class="bg-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Próximos Eventos</h2>
+            <div class="row">
+                <!-- Evento 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="img/evento1.jpg" class="card-img-top" alt="Evento">
+                        <div class="card-body">
+                            <h5 class="card-title">Conferência de Jovens</h5>
+                            <p class="card-text"><i class="far fa-calendar-alt"></i> 15/10/2025 - 19h</p>
+                            <p class="card-text"><i class="fas fa-map-marker-alt"></i> Sede da Igreja</p>
+                            <a href="#" class="btn btn-primary">Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Evento 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="img/evento2.jpg" class="card-img-top" alt="Evento">
+                        <div class="card-body">
+                            <h5 class="card-title">Batismo</h5>
+                            <p class="card-text"><i class="far fa-calendar-alt"></i> 22/10/2025 - 9h</p>
+                            <p class="card-text"><i class="fas fa-map-marker-alt"></i> Piscina da Igreja</p>
+                            <a href="#" class="btn btn-primary">Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Evento 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="img/evento3.jpg" class="card-img-top" alt="Evento">
+                        <div class="card-body">
+                            <h5 class="card-title">Escola Bíblica Dominical</h5>
+                            <p class="card-text"><i class="far fa-calendar-alt"></i> Todos os domingos - 8h</p>
+                            <p class="card-text"><i class="fas fa-map-marker-alt"></i> Templo Sede</p>
+                            <a href="#" class="btn btn-primary">Detalhes</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="eventos.html" class="btn btn-outline-primary">Ver todos os eventos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5>Assembleia de Deus - Caculé/BA</h5>
+                    <p>Rua Ten. José Raimundo de Castro<br>
+                        Caculé - BA, 46300-000</p>
+                    <p><i class="fas fa-phone"></i> (77) 99999-9999</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Horários de Culto</h5>
+                    <ul class="list-unstyled">       
+                        <li>Terça: 19:00h &lpar;Culto de Ensino &rpar;</li>
+                        <li>Sexta: 19:00h &lpar;Culto da Vitória &rpar; </li>
+                        <li>Domingo: 18:30h </li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Redes Sociais</h5>
+                    <a href="#" class="text-white me-2"><i class="fab fa-facebook fa-2x"></i></a>
+                    <a href="#" class="text-white me-2"><i class="fab fa-instagram fa-2x"></i></a>
+                    <a href="#" class="text-white me-2"><i class="fab fa-youtube fa-2x"></i></a>
+                    <a href="#" class="text-white me-2"><i class="fab fa-whatsapp fa-2x"></i></a>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p class="mb-0">&copy; 2025 Assembleia de Deus - Caculé/BA. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS e Popper.js -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- JavaScript Personalizado -->
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
