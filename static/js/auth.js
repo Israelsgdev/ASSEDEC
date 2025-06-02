@@ -5,7 +5,8 @@ document.addEventListener('DOMContentLoaded', function() {
     // Simulação de usuários (em um sistema real, isso viria de um banco de dados)
     const users = [
         { email: 'membro@adcacule.com', password: 'senha123', name: 'João Silva' },
-        { email: 'lider@adcacule.com', password: 'senha456', name: 'Maria Souza' }
+        { email: 'lider@adcacule.com', password: 'senha456', name: 'Maria Souza' },
+        { email: 'israel@adcacule.com', password: '123', name: 'Maria Souza' }
     ];
 
     loginForm.addEventListener('submit', function(e) {
@@ -30,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
             
             // Redirecionar para área de membros
-            window.location.href = 'membros/dashboard.html';
+            window.location.href = '/dashboard';
         } else {
             loginError.classList.remove('d-none');
         }

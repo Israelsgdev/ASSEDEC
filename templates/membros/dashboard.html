@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Painel do Membro - AD Caculé</title>
-    <link href="../../css/bootstrap.min.css" rel="stylesheet">
-    <link href="../../css/style.css" rel="stylesheet">
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/css/style.css" rel="stylesheet">
     <style>
         .sidebar {
             min-height: 100vh;
@@ -29,7 +29,7 @@
             <div class="col-md-3 col-lg-2 d-md-block sidebar collapse">
                 <div class="position-sticky pt-3">
                     <div class="text-center mb-4">
-                        <img src="../../img/logo.png" alt="Logo AD Caculé" height="50">
+                        <img src="../static/img/logo.png" alt="Logo AD Caculé" height="50">
                         <h5 class="mt-2">Área do Membro</h5>
                     </div>
                     <ul class="nav flex-column">
@@ -59,7 +59,7 @@
                             </a>
                         </li>
                         <li class="nav-item mt-3">
-                            <a class="nav-link text-danger" href="#" id="logout">
+                            <a class="nav-link text-danger" href="/" id="logout">
                                 <i class="fas fa-sign-out-alt me-2"></i>Sair
                             </a>
                         </li>
@@ -147,13 +147,13 @@
     </div>
 
     <!-- Bootstrap JS e Popper.js -->
-    <script src="../../js/bootstrap.bundle.min.js"></script>
+    <script src="../static/js/bootstrap.bundle.min.js"></script>
     <!-- JavaScript Personalizado -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             // Verificar se o usuário está logado
             if (sessionStorage.getItem('loggedIn') !== 'true') {
-                window.location.href = '../../login.html';
+                window.location.href = '../../login';
             }
             
             // Exibir nome do usuário
@@ -164,7 +164,7 @@
                 e.preventDefault();
                 sessionStorage.removeItem('loggedIn');
                 sessionStorage.removeItem('userName');
-                window.location.href = '../../index.html';
+                window.location.href = '../../';
             });
         });
     </script>
